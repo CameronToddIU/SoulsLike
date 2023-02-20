@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290611654}
   - component: {fileID: 290611653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 414191435}
   - component: {fileID: 414191437}
   - component: {fileID: 414191436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stuff goes here
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 634082365}
   - component: {fileID: 634082367}
   - component: {fileID: 634082366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap_Beach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5077,7 +5077,7 @@ GameObject:
   - component: {fileID: 1302995865}
   - component: {fileID: 1302995867}
   - component: {fileID: 1302995866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap_Castle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7297,7 +7297,7 @@ GameObject:
   - component: {fileID: 1649808020}
   - component: {fileID: 1649808022}
   - component: {fileID: 1649808021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap_Walkway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8209,7 +8209,7 @@ GameObject:
   - component: {fileID: 2054179737}
   - component: {fileID: 2054179739}
   - component: {fileID: 2054179738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap_Markings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
