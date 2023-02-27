@@ -548,6 +548,14 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 927413329}
+    - target: {fileID: 2840408194382611810, guid: bfbf198b02b7de046b3d48b2ea97592e, type: 3}
+      propertyPath: animator2
+      value: 
+      objectReference: {fileID: 1947539798}
+    - target: {fileID: 2840408194382611810, guid: bfbf198b02b7de046b3d48b2ea97592e, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 2063489008}
     - target: {fileID: 2840408194382611822, guid: bfbf198b02b7de046b3d48b2ea97592e, type: 3}
       propertyPath: m_Name
       value: DevanPlayer
@@ -1252,6 +1260,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1947539798 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1857481069887420839, guid: bfbf198b02b7de046b3d48b2ea97592e, type: 3}
+  m_PrefabInstance: {fileID: 888645486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2009257698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1376,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.7331463}
   m_EdgeRadius: 0
+--- !u!4 &2063489008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5594722079840387524, guid: bfbf198b02b7de046b3d48b2ea97592e, type: 3}
+  m_PrefabInstance: {fileID: 888645486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2134883806
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,8 @@ public class PlayerMovementSprite : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
-    public ParticleSystem ps;
+    public ParticleSystem dodgeTrail;
+    public ParticleSystem dodgeCircle;
 
     private enum State {
         Normal,
@@ -18,6 +19,7 @@ public class PlayerMovementSprite : MonoBehaviour
     private Vector3 rollDir;
     private float rollSpeed;
     private bool rollTrue = false;
+    private bool newRoll = true;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -67,7 +69,13 @@ public class PlayerMovementSprite : MonoBehaviour
         case State.Rolling:
             float rollSpeedDropMultiplier = 5f;
             rollTrue = true;
-            ps.Play();
+            //if the animation has not yet been played for this roll, play animation and indicate
+            //that the animation has been played
+            if(newRoll) {
+                dodgeTrail.Play();
+                dodgeCircle.Play();
+                newRoll = false;
+            }
             //plays rolling animation when rolling
             animator.SetBool("Rolling", rollTrue);
             rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
@@ -76,6 +84,8 @@ public class PlayerMovementSprite : MonoBehaviour
             if(rollSpeed < rollSpeedMinimum){
                 state = State.Normal;
                 rollTrue = false;
+                //indicate to that animation can play again on next roll
+                newRoll = true;
                 //plays rolling animation when rolling
                 animator.SetBool("Rolling", rollTrue);
             }
