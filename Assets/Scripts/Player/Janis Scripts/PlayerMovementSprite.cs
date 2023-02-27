@@ -8,6 +8,7 @@ public class PlayerMovementSprite : MonoBehaviour
     public float moveSpeed = 5f;
     public ParticleSystem dodgeTrail;
     public ParticleSystem dodgeCircle;
+    public SpriteRenderer spriteRenderer;
 
     private enum State {
         Normal,
@@ -20,6 +21,8 @@ public class PlayerMovementSprite : MonoBehaviour
     private float rollSpeed;
     private bool rollTrue = false;
     private bool newRoll = true;
+    private bool posX = true;
+    private bool faceLeft = false;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -52,6 +55,22 @@ public class PlayerMovementSprite : MonoBehaviour
         //checks if movement is not equal to 0 (so if you are moving, the lastMoveDir is set to moveDir)
         if (movement.x != 0 || movement.y != 0) {
             lastMoveDir = moveDir;
+        }
+
+        if (movement.x < 0) {
+            posX = false;
+        } else if(movement.x > 0){
+            posX = true;
+        }
+
+        if(!posX && !faceLeft) {
+            faceLeft = true;
+            spriteRenderer.flipX = true;
+        }
+
+        if(posX && faceLeft) {
+            faceLeft = false;
+            spriteRenderer.flipX = false;
         }
 
         //Gets the space button
