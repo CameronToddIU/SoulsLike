@@ -68,7 +68,7 @@ public class EnemyFollow : MonoBehaviour
                 if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
                 {
                     Debug.Log("Hitting Player");
-                playerMovement.LossHealth();
+                    playerMovement.LossHealth();
                 }
                 attacking = false;
                 timeTracker = 2f;
