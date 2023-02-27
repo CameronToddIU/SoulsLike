@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
     public void LossHealth()
     {
         playerHealth.Damaged(1);
-        animator.SetTrigger("PlayerHit");
+        // animator.SetTrigger("PlayerHit");
         Debug.Log("losshealth called");
     }
 
