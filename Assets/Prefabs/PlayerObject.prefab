@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2840408194250466534}
   - component: {fileID: 2840408194250466535}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,10 @@ GameObject:
   - component: {fileID: 2840408194382611823}
   - component: {fileID: 2840408194382611808}
   - component: {fileID: 2840408194382611809}
+  - component: {fileID: 1868962122437927333}
   - component: {fileID: 2840408194382611810}
-  m_Layer: 0
+  - component: {fileID: 334830015297156972}
+  m_Layer: 10
   m_Name: PlayerObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +159,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &1868962122437927333
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840408194382611822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.047435403}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.917083}
+  m_EdgeRadius: 0
 --- !u!114 &2840408194382611810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15302c7bb0a122c4191547d55323059d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: {fileID: 334830015297156972}
   animator: {fileID: 2840408194418123598}
   attackPoint: {fileID: 2840408194494884231}
   attackRange: 0.83
@@ -176,7 +205,26 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackDamage: 40
+  meter: 0
   attackRate: 2
+--- !u!114 &334830015297156972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840408194382611822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606c408722c985547a7c75354c81645f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2840408194418123598}
+  health: 5
+  numOfHearts: 5
+  hearts: []
+  fullHeart: {fileID: 21300000, guid: f77813a603eaf9d47b6aa05964210771, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 95161dd8e79bbae4fad75dfcbab403d4, type: 3}
 --- !u!1 &2840408194418123593
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +237,7 @@ GameObject:
   - component: {fileID: 2840408194418123596}
   - component: {fileID: 2840408194418123598}
   - component: {fileID: 2840408194418123599}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerCapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2840408194494884231}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

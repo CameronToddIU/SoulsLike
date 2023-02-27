@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-
+    public PlayerHealth playerHealth;
     public Animator animator;
 
     public Transform attackPoint;
@@ -12,6 +12,7 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask enemyLayers;
 
     public int attackDamage = 40;
+    public int meter = 0;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -45,10 +46,17 @@ public class PlayerAttack : MonoBehaviour
         foreach(Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            meter = meter + 1;
+            if (meter >= 3)
+            {
+                Debug.Log(meter);
+                playerHealth.Heal();
+                meter = 0;
+            }
         }
-
-
+        
     }
+    
 
     //shows the attack sphere for player in unity
     void OnDrawGizmosSelected() 
