@@ -6,7 +6,8 @@ public class PlayerMovementSprite : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
-    public ParticleSystem ps;
+    public ParticleSystem dodgeTrail;
+    public ParticleSystem dodgeCircle;
 
     private enum State {
         Normal,
@@ -67,7 +68,8 @@ public class PlayerMovementSprite : MonoBehaviour
         case State.Rolling:
             float rollSpeedDropMultiplier = 5f;
             rollTrue = true;
-            ps.Play();
+            dodgeTrail.Play();
+            dodgeCircle.Play();
             //plays rolling animation when rolling
             animator.SetBool("Rolling", rollTrue);
             rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
