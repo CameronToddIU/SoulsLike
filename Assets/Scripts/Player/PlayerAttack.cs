@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
 
     public Animator animator;
+    public Animator animator2;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -36,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         //play attack animation
-        animator.SetTrigger("Attack");
+        animator2.SetTrigger("Attack");
 
         //Detect if enemy is in range to be hit
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

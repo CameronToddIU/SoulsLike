@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
+    public int playerHealth = 3;
 
     private enum State {
         Normal,
@@ -99,4 +100,12 @@ public class PlayerMovement : MonoBehaviour
         break;
         }
     }
+
+    public void LossHealth()
+    {
+        playerHealth -= 1;
+        animator.SetTrigger("PlayerHit");
+        Debug.Log(playerHealth);
+    }
+
 }
