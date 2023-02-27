@@ -8,6 +8,7 @@ public class EnemyFollow : MonoBehaviour
     public Rigidbody2D enemyRB;
     public Transform attackPointEnemy;
     public BoxCollider2D bc;
+    public PlayerMovement playerMovement;
 
 
     public float speed;
@@ -67,6 +68,7 @@ public class EnemyFollow : MonoBehaviour
                 if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
                 {
                     Debug.Log("Hitting Player");
+                playerMovement.LossHealth();
                 }
                 attacking = false;
                 timeTracker = 2f;

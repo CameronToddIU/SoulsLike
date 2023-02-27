@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public PlayerHealth playerHealth;
     public float moveSpeed = 5f;
-    public int playerHealth = 3;
 
     private enum State {
         Normal,
@@ -103,9 +102,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void LossHealth()
     {
-        playerHealth -= 1;
+        playerHealth.Damaged(1);
         animator.SetTrigger("PlayerHit");
-        Debug.Log(playerHealth);
+        Debug.Log("losshealth called");
     }
 
 }

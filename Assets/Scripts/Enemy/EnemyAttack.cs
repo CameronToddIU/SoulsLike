@@ -35,8 +35,6 @@ public class EnemyAttack : MonoBehaviour
 
     void Attack()
     {
-        //play attack animation
-        animator.SetTrigger("Attack");
 
 
         //Detect if player is in range to be hit
