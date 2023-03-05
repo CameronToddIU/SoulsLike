@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public Animator animator;
+    public GameEnding gameEnding;
 
     public int health;
     public int numOfHearts;
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("Dead", true);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        gameEnding.PlayerDied();
         
     }
     public void Heal() 
