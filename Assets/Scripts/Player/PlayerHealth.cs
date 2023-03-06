@@ -47,9 +47,6 @@ public class PlayerHealth : MonoBehaviour
     public void Die() 
     {
         Debug.Log("Player Died");
-        animator.SetBool("Dead", true);
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
         gameEnding.PlayerDied();
         
     }
@@ -116,7 +113,7 @@ public class PlayerHealth : MonoBehaviour
                 }
                 else if (i == meters.Length - 1)
                 {
-                    meters[i].sprite = emptyMeterRight;
+                    meters[i].sprite = emptyMeterRight;  
                 }
                 else 
                 {      
