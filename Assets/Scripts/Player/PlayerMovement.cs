@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public Animator animator;
+    public AudioSource dashAudio;
+    public AudioSource damagedAudio;
+
+
 
 
     Vector2 movement;
@@ -61,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
             rollSpeed = 40f;
 
             state = State.Rolling;
+            dashAudio.Play();
             
         }
             break;
@@ -103,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void LossHealth()
     {
+        damagedAudio.Play();
         playerHealth.Damaged(1);
         // animator.SetTrigger("PlayerHit");
         Debug.Log("losshealth called");
