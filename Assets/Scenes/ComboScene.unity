@@ -853,7 +853,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339389799}
-  - component: {fileID: 339389800}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -876,21 +875,54 @@ Transform:
   - {fileID: 1978028414}
   - {fileID: 4652629}
   - {fileID: 1952086895}
+  - {fileID: 342211844}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &339389800
+--- !u!1 &342211843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 342211844}
+  - component: {fileID: 342211845}
+  m_Layer: 0
+  m_Name: dodge-dash__sophiehall3535
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &342211844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342211843}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.560881, y: -0.60080564, z: 0.0790893}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 339389799}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &342211845
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339389798}
+  m_GameObject: {fileID: 342211843}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a896f9344ee0b4409818654df780f1c, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: b04a18b608b2742489f1717c53fe956b, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4528,6 +4560,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: JanisPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4484046005224821515, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: dashAudio
+      value: 
+      objectReference: {fileID: 342211845}
+    - target: {fileID: 4484046005224821515, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: damagedAudio
+      value: 
+      objectReference: {fileID: 1978028415}
     - target: {fileID: 7812300389253900553, guid: 305285cf51a3307488d6b5d343c5d1ba,
         type: 3}
       propertyPath: healAudio
