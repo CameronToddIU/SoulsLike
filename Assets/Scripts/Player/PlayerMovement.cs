@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private bool rollTrue = false;
 
     public Rigidbody2D rb;
+    public BoxCollider2D bc;
     public Animator animator;
     public AudioSource dashAudio;
     public AudioSource damagedAudio;
@@ -62,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             //makes the roll direction equal to your last moving direction
             rollDir = lastMoveDir;
             //changes how fast rolling is
-            rollSpeed = 40f;
+            rollSpeed = 35f;
 
             state = State.Rolling;
             dashAudio.Play();
@@ -72,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         case State.Rolling:
             float rollSpeedDropMultiplier = 5f;
             rollTrue = true;
+            bc.enabled = false;
             //plays rolling animation when rolling
             animator.SetBool("Rolling", rollTrue);
             rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
@@ -80,8 +82,10 @@ public class PlayerMovement : MonoBehaviour
             if(rollSpeed < rollSpeedMinimum){
                 state = State.Normal;
                 rollTrue = false;
+                bc.enabled = true;
                 //plays rolling animation when rolling
                 animator.SetBool("Rolling", rollTrue);
+
             }
             break;
         }
