@@ -14,6 +14,7 @@ public class PlayerAttack : MonoBehaviour
 
     public int attackDamage = 40;
     public int meter = 0;
+    public bool meterReady = false;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -21,6 +22,13 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButton("Fire1") && meterReady) {
+            //press Left Ctrl to heal
+            Debug.Log("Meter Used");
+            playerHealth.Heal();
+            meter = 0;
+            meterReady = false;
+        }
 
         //checks if you can attack yet
         if(Time.time >= nextAttackTime)
@@ -51,8 +59,9 @@ public class PlayerAttack : MonoBehaviour
             if (meter >= 3)
             {
                 Debug.Log(meter);
-                playerHealth.Heal();
-                meter = 0;
+                meterReady = true;
+                //playerHealth.Heal();
+                //meter = 0;
             }
         }
         

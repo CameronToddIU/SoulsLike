@@ -780,6 +780,11 @@ PrefabInstance:
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 927413333}
+    - target: {fileID: 781367750657497189, guid: 11ac3ffb7d215bc409c7fd4ba0558236,
+        type: 3}
+      propertyPath: attackPointEnemy
+      value: 
+      objectReference: {fileID: 2063489008}
     - target: {fileID: 4130176028399404593, guid: 11ac3ffb7d215bc409c7fd4ba0558236,
         type: 3}
       propertyPath: m_RootOrder
