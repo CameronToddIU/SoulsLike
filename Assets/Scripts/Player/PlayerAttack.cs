@@ -12,12 +12,16 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+    public AudioSource hitEnemy;
+    public AudioSource missEnemy;
+
     public int attackDamage = 40;
     public int meter = 0;
     public bool meterReady = false;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+    private bool king = false;
 
     // Update is called once per frame
     void Update()
@@ -54,7 +58,9 @@ public class PlayerAttack : MonoBehaviour
         //Damge Enemies
         foreach(Collider2D enemy in hitEnemies)
         {
+            king = true;
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            hitEnemy.Play();
             meter = meter + 1;
             if (meter >= 3)
             {
@@ -64,6 +70,14 @@ public class PlayerAttack : MonoBehaviour
                 //meter = 0;
             }
         }
+            
+            if(king == false) 
+            {
+                missEnemy.Play();
+                Debug.Log("miss");
+            }
+
+            king = false;
         
     }
     
