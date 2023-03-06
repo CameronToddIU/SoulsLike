@@ -9,6 +9,9 @@ public class EnemyFollow : MonoBehaviour
     public Transform attackPointEnemy;
     public BoxCollider2D bc;
     public PlayerMovement playerMovement;
+    public Enemy enemyScript;
+
+    public Transform enemySword;
 
 
     public float speed;
@@ -22,37 +25,43 @@ public class EnemyFollow : MonoBehaviour
 
 
 
-
     private void Update()
     {
-        
-        if(attacking != true)
+        if(enemyScript.die != true)
         {
-            if (Vector2.Distance(transform.position, target.position) > minimumDistance)
+            if(attacking != true)
             {
-                // Debug.Log(transform.position + new Vector3 (speed,0,0));
-                // transform.postion = transform.position + speed;
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-                
-            } else
+                if (Vector2.Distance(transform.position, target.position) > minimumDistance)
+                {
+                    //makes the enemy sword face player
+                    Vector3 dir = (target.position - transform.position).normalized;
+                    var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                    enemySword.eulerAngles = new Vector3(0,0,angle);
+                    //makes enemy sword face player
+
+
+                    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    
+                } else
+                {
+                    attacking = true;
+                }
+
+            }else
             {
-                attacking = true;
+                Damage();
+                // timeTracker -= Time.deltaTime;
+                // if(timeTracker < 0)
+                // {
+                //     if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
+                //     {
+                //         Debug.Log("Hitting Player");
+                //     }
+                //     attacking = false;
+                //     timeTracker = 2f;
+                // }
+
             }
-
-        }else
-        {
-            Damage();
-            // timeTracker -= Time.deltaTime;
-            // if(timeTracker < 0)
-            // {
-            //     if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
-            //     {
-            //         Debug.Log("Hitting Player");
-            //     }
-            //     attacking = false;
-            //     timeTracker = 2f;
-            // }
-
         }
     }
 

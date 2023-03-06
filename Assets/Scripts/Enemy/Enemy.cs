@@ -6,8 +6,10 @@ public class Enemy : MonoBehaviour
 {
 
     public Animator animator;
+    public Animator animatorAttack;
 
     public int maxHealth = 100;
+    public bool die = false;
     int currentHealth;
 
     void Start() 
@@ -28,6 +30,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        die = true;
+        animatorAttack.SetTrigger("AttackDead");
         animator.SetBool("Dead", true);
         Debug.Log("Enemy Died");
 

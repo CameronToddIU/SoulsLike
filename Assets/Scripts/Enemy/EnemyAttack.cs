@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
 
     public Animator animator;
+    // public Animator animatorAttack;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;

@@ -108,4 +108,16 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("losshealth called");
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(other);
+        if(other.gameObject.CompareTag("Confine1"))
+        {
+            other.GetComponent<CameraConfine>().Test(0);
+        } else if (other.gameObject.CompareTag("Confine2"))
+        {
+            other.GetComponent<CameraConfine>().Test(1);
+        }
+    }
+
 }
