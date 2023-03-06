@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && meterReady) {
+        if (Input.GetKeyDown(KeyCode.LeftControl) && meterReady) {
             //press Left Ctrl to heal
             Debug.Log("Meter Used");
             playerHealth.Heal();
@@ -67,6 +67,10 @@ public class PlayerAttack : MonoBehaviour
         
     }
     
+    public int getMeter()
+    {
+        return meter;
+    }
 
     //shows the attack sphere for player in unity
     void OnDrawGizmosSelected() 
