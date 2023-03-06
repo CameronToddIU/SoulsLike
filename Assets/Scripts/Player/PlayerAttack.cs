@@ -74,7 +74,6 @@ public class PlayerAttack : MonoBehaviour
             if(king == false) 
             {
                 missEnemy.Play();
-                Debug.Log("miss");
             }
 
             king = false;
