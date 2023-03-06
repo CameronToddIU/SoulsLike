@@ -26,6 +26,9 @@ public class PlayerHealth : MonoBehaviour
     public Sprite emptyMeterCenter;
     public Sprite emptyMeterRight;
 
+    public AudioSource healAudio;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player Healed!");
         health = numOfHearts;
+        healAudio.Play();
     }
     // Update is called once per frame
     void Update()
