@@ -4574,12 +4574,12 @@ PrefabInstance:
     - target: {fileID: 3106478755766827859, guid: 2f60833290896ff478302964ddc5ed41,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3021371
+      value: -3.3021333
       objectReference: {fileID: 0}
     - target: {fileID: 3106478755766827859, guid: 2f60833290896ff478302964ddc5ed41,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3487434
+      value: 2.348559
       objectReference: {fileID: 0}
     - target: {fileID: 3106478755766827859, guid: 2f60833290896ff478302964ddc5ed41,
         type: 3}
@@ -4733,6 +4733,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7812300389832222637}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &5931335016953500300 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4484046005322462500, guid: 305285cf51a3307488d6b5d343c5d1ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 7812300389832222637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5931335017056122022 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4484046005224821515, guid: 305285cf51a3307488d6b5d343c5d1ba,
@@ -4818,6 +4824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JanisPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4484046005224821515, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: bc
+      value: 
+      objectReference: {fileID: 5931335016953500300}
     - target: {fileID: 4484046005224821515, guid: 305285cf51a3307488d6b5d343c5d1ba,
         type: 3}
       propertyPath: dashAudio
