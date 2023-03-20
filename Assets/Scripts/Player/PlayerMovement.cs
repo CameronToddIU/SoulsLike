@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public AudioSource dashAudio;
     public AudioSource damagedAudio;
+    public GameEnding gameEnding;
 
 
 
@@ -121,7 +122,11 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other);
-        if(other.gameObject.CompareTag("Confine1"))
+        if (other.gameObject.CompareTag("Finish")) 
+        {
+            gameEnding.PlayerEnteredEnd();
+        }
+        if (other.gameObject.CompareTag("Confine1"))
         {
             other.GetComponent<CameraConfine>().Test(0);
         } else if (other.gameObject.CompareTag("Confine2"))

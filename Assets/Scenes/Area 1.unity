@@ -728,6 +728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraConfiner2
       objectReference: {fileID: 0}
+    - target: {fileID: 1802801670656980603, guid: a5a6567414fde1d41a48b0ab4d5ca482,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5a6567414fde1d41a48b0ab4d5ca482, type: 3}
 --- !u!95 &93203271 stripped
@@ -1825,6 +1830,11 @@ PrefabInstance:
       objectReference: {fileID: 561192162}
     - target: {fileID: 7784998263893601580, guid: 208ea42e33bc8aa4995d3f48b254adf5,
         type: 3}
+      propertyPath: exitAudio
+      value: 
+      objectReference: {fileID: 1736814288}
+    - target: {fileID: 7784998263893601580, guid: 208ea42e33bc8aa4995d3f48b254adf5,
+        type: 3}
       propertyPath: diedBackgroundImageCanvasGroup
       value: 
       objectReference: {fileID: 924097321}
@@ -2143,7 +2153,7 @@ GameObject:
   - component: {fileID: 369550649}
   m_Layer: 0
   m_Name: GameWinTrigger
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11966,6 +11976,11 @@ PrefabInstance:
       objectReference: {fileID: 517815854}
     - target: {fileID: 1523523264992460564, guid: 305285cf51a3307488d6b5d343c5d1ba,
         type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 67572304}
+    - target: {fileID: 1523523264992460564, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
       propertyPath: damagedAudio
       value: 
       objectReference: {fileID: 1987181084}
@@ -16913,6 +16928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CameraConfiner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221991106800843582, guid: 0b75a021339d3e547b1c3c689fa9daeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
