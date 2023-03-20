@@ -598,6 +598,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1802801670656980600, guid: a5a6567414fde1d41a48b0ab4d5ca482,
+        type: 3}
+      propertyPath: poly.Array.data[0]
+      value: 
+      objectReference: {fileID: 1176671198}
     - target: {fileID: 1802801670656980601, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_RootOrder
@@ -1439,7 +1444,7 @@ PrefabInstance:
     - target: {fileID: 21001468011277779, guid: 27d242a3ad122ed4cbe41d59d97a304e,
         type: 3}
       propertyPath: m_Damping
-      value: 7.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 21001468011277779, guid: 27d242a3ad122ed4cbe41d59d97a304e,
         type: 3}
@@ -16899,6 +16904,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2221991106800843581, guid: 0b75a021339d3e547b1c3c689fa9daeb,
+        type: 3}
+      propertyPath: poly.Array.data[1]
+      value: 
+      objectReference: {fileID: 1893538165}
     - target: {fileID: 2221991106800843582, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
       propertyPath: m_Name
@@ -46042,6 +46052,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f60833290896ff478302964ddc5ed41, type: 3}
+--- !u!60 &1893538165 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
+    type: 3}
+  m_PrefabInstance: {fileID: 92411042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1900209101
 PrefabInstance:
   m_ObjectHideFlags: 0
