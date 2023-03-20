@@ -18,12 +18,9 @@ public class GameEnding : MonoBehaviour
     float m_Timer;
     bool m_HasAudioPlayed;
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            m_IsPlayerAtExit = true;
-        }
+    public void PlayerEnteredEnd()
+    {      
+        m_IsPlayerAtExit = true;
     }
 
     public void PlayerDied()
