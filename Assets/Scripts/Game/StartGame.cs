@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     //starts the game on button click 
-    void PlayGame()
+    public void PlayGame()
     {
-        Debug.Log("Play Clicked");
         SceneManager.LoadScene(1);
+    }
+    public void QuitGame() 
+    {
+        Application.Quit();
     }
 
    

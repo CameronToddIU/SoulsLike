@@ -56,14 +56,7 @@ public class GameEnding : MonoBehaviour
 
         if (m_Timer > fadeDuration + displayImageDuration)
         {
-            if (doRestart)
-            {
-                SceneManager.LoadScene(0);
-            }
-            else
-            {
-                Application.Quit();
-            }
+            SceneManager.LoadScene(2);
         }
     }
 }
