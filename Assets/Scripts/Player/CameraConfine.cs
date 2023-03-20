@@ -17,6 +17,7 @@ public class CameraConfine : MonoBehaviour
 
     public void Test(int confiner)
     {
+        Debug.Log("Seeeeee" + confiner);
         CinemachineCam.m_BoundingShape2D = poly[confiner];
     }
 }
