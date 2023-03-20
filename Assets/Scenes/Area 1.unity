@@ -43258,6 +43258,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1026810520}
     m_Modifications:
+    - target: {fileID: 6644944588161500793, guid: 4be821d0b78ad5043985b57b738e951b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6644944589867386884, guid: 4be821d0b78ad5043985b57b738e951b,
         type: 3}
       propertyPath: m_RootOrder
@@ -43532,6 +43537,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2440844624711060802, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 1987016302}
+    - target: {fileID: 2440844624711060802, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      propertyPath: closedDoor
+      value: 
+      objectReference: {fileID: 1938668343}
     - target: {fileID: 7947911505737750448, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: m_RootOrder
@@ -44895,6 +44910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: door(open)
       objectReference: {fileID: 0}
+    - target: {fileID: 2055102311959635369, guid: 8e9c401d7a70ec94d956296ea011f594,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 8e9c401d7a70ec94d956296ea011f594,
         type: 3}
       propertyPath: m_RootOrder
@@ -44948,6 +44968,11 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 8e9c401d7a70ec94d956296ea011f594,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714984038401059190, guid: 8e9c401d7a70ec94d956296ea011f594,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -45959,6 +45984,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d9a1504606c57143b1a8bbc2249aabe, type: 3}
+--- !u!1 &1938668343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1192930671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1947113600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46083,6 +46114,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1523523265090640185, guid: 305285cf51a3307488d6b5d343c5d1ba,
     type: 3}
   m_PrefabInstance: {fileID: 828606514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1987016302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 8e9c401d7a70ec94d956296ea011f594,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640195327}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1987181084 stripped
 AudioSource:
