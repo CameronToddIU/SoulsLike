@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
+    public AudioSource EnemyMusic;
 
     public Rigidbody2D enemyRB;
     public Transform attackPointEnemy;
@@ -12,7 +13,6 @@ public class EnemyFollow : MonoBehaviour
     public Enemy enemyScript;
 
     public Transform enemySword;
-
 
     public float speed;
     public Transform target;
@@ -26,8 +26,6 @@ public class EnemyFollow : MonoBehaviour
     private float timeTracker = 2f;
     private float timeTracker2 = 2f;
 
-
-
     private void Update()
     {
         if(enemyScript.die != true)
@@ -37,6 +35,9 @@ public class EnemyFollow : MonoBehaviour
                   //  Debug.Log("Distance from target: "+ Vector2.Distance(transform.position, target.position));
                 if (Vector2.Distance(transform.position, target.position) > minimumDistance&& Vector2.Distance(transform.position, target.position) < enemyChaseRange)
                 {
+                    //activates battle music
+                    AmbianceManager.SwapTrack(EnemyMusic, true);
+
                     //makes the enemy sword face player
                     Vector3 dir = (target.position - transform.position).normalized;
                     var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

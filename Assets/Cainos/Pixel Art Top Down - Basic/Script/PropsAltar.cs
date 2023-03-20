@@ -14,6 +14,9 @@ namespace Cainos.PixelArtTopDown_Basic
         public GameObject closedDoor;
         public GameObject openDoor;
 
+        public AudioSource doorOpen;
+        public AudioSource doorClose;
+
         private Color curColor;
         private Color targetColor;
 
@@ -22,6 +25,7 @@ namespace Cainos.PixelArtTopDown_Basic
             targetColor = new Color(1, 1, 1, 1);
             openDoor.SetActive(true);
             closedDoor.SetActive(false);
+            doorOpen.Play();
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -29,6 +33,7 @@ namespace Cainos.PixelArtTopDown_Basic
             targetColor = new Color(1, 1, 1, 0);
             openDoor.SetActive(false);
             closedDoor.SetActive(true);
+            doorClose.Play();
         }
 
         private void Update()
