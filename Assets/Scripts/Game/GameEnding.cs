@@ -56,7 +56,14 @@ public class GameEnding : MonoBehaviour
 
         if (m_Timer > fadeDuration + displayImageDuration)
         {
-            SceneManager.LoadScene(2);
-        }
+            if (m_IsPlayerDead)
+            {
+                SceneManager.LoadScene(2);
+            }
+            else if (m_IsPlayerAtExit) 
+            {
+                SceneManager.LoadScene(0);
+            }
+        }   
     }
 }
