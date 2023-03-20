@@ -301,6 +301,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 835895881}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &65244624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 21001468011277779, guid: 27d242a3ad122ed4cbe41d59d97a304e,
+    type: 3}
+  m_PrefabInstance: {fileID: 231027433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &67572304 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7784998263893601580, guid: 208ea42e33bc8aa4995d3f48b254adf5,
@@ -600,6 +612,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1802801670656980600, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
+      propertyPath: CinemachineCam
+      value: 
+      objectReference: {fileID: 65244624}
+    - target: {fileID: 1802801670656980600, guid: a5a6567414fde1d41a48b0ab4d5ca482,
+        type: 3}
       propertyPath: poly.Array.data[0]
       value: 
       objectReference: {fileID: 1176671198}
@@ -666,17 +683,17 @@ PrefabInstance:
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 32.16397
+      value: 55.783894
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 37.81562
+      value: 38.068134
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 12.179577
+      value: 12.086707
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
@@ -686,7 +703,7 @@ PrefabInstance:
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 12.836282
+      value: 12.464802
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
@@ -706,22 +723,22 @@ PrefabInstance:
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: 30.785168
+      value: 33.43372
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: 14.412663
+      value: 11.4109745
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
-      value: 31.786549
+      value: 56.43182
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
-      value: 15.586423
+      value: 12.055162
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980603, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
@@ -16921,6 +16938,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843581, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
+      propertyPath: CinemachineCam
+      value: 
+      objectReference: {fileID: 65244624}
+    - target: {fileID: 2221991106800843581, guid: 0b75a021339d3e547b1c3c689fa9daeb,
+        type: 3}
       propertyPath: poly.Array.data[1]
       value: 
       objectReference: {fileID: 1893538165}
@@ -16937,22 +16959,22 @@ PrefabInstance:
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 8.921988
+      value: 8.550508
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 31.61593
+      value: 38.11684
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -12.461598
+      value: -12.554469
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 31.064232
+      value: 37.84375
       objectReference: {fileID: 0}
     - target: {fileID: 2221991106800843583, guid: 0b75a021339d3e547b1c3c689fa9daeb,
         type: 3}
