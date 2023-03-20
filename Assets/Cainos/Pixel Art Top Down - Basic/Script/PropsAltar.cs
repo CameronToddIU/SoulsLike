@@ -11,17 +11,24 @@ namespace Cainos.PixelArtTopDown_Basic
         public List<SpriteRenderer> runes;
         public float lerpSpeed;
 
+        public GameObject closedDoor;
+        public GameObject openDoor;
+
         private Color curColor;
         private Color targetColor;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 1);
+            openDoor.SetActive(true);
+            closedDoor.SetActive(false);
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 0);
+            openDoor.SetActive(false);
+            closedDoor.SetActive(true);
         }
 
         private void Update()
