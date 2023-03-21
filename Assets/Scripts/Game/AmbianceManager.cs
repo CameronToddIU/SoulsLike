@@ -24,7 +24,7 @@ public class AmbianceManager : MonoBehaviour
     private void Start()
     {
         defaultAmbiance = aSource;
-        defaultAmbiance.volume = 0.03f;
+        defaultAmbiance.volume = 0.1f;
         defaultAmbiance.Play();
         isDefaultMusic = true;
         fadeInstanceActive = false;
@@ -55,8 +55,8 @@ public class AmbianceManager : MonoBehaviour
 
                     while (timeElapsed < timeToFade)
                     {
-                        newClip.volume = Mathf.Lerp(0f, 0.03f, timeElapsed / timeToFade);
-                        defaultAmbiance.volume = Mathf.Lerp(0.03f, 0f, timeElapsed / timeToFade);
+                        newClip.volume = Mathf.Lerp(0f, 0.1f, timeElapsed / timeToFade);
+                        defaultAmbiance.volume = Mathf.Lerp(0.1f, 0f, timeElapsed / timeToFade);
                         timeElapsed += Time.deltaTime;
                         yield return null;
                     }
@@ -74,8 +74,8 @@ public class AmbianceManager : MonoBehaviour
 
                     while (timeElapsed < timeToFade)
                     {
-                        defaultAmbiance.volume = Mathf.Lerp(0f, 0.03f, timeElapsed / timeToFade);
-                        newClip.volume = Mathf.Lerp(0.03f, 0f, timeElapsed / timeToFade);
+                        defaultAmbiance.volume = Mathf.Lerp(0f, 0.1f, timeElapsed / timeToFade);
+                        newClip.volume = Mathf.Lerp(0.1f, 0f, timeElapsed / timeToFade);
                         timeElapsed += Time.deltaTime;
                         yield return null;
                     }
