@@ -24,7 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource dashAudio;
     public AudioSource damagedAudio;
     public GameEnding gameEnding;
-    public GameObject[] enemyGroup;
+    public GameObject[] enemyGroup1;
+    public GameObject[] enemyGroup2;
+    public GameObject[] enemyGroup3;
     public EnemyFollow enemyFollow;
     public EnemyFollow follow2;
 
@@ -131,18 +133,25 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Confine1"))
         {
-            enemyGroup[0].GetComponent<EnemyFollow>().Active();
+            foreach (GameObject enemy in enemyGroup1){
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+            
             //enemyFollow.Active();
             other.GetComponent<CameraConfine>().Test(0);
         } else if (other.gameObject.CompareTag("Confine2"))
         {
-            follow2.Active();
+            foreach (GameObject enemy in enemyGroup2){
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
             other.GetComponent<CameraConfine>().Test(1);
         }
-        /*if(other.gameObject.CompareTag("Room"))
+        if(other.gameObject.CompareTag("Room"))
         {
-            follow3.Active();
-        }*/
+            foreach (GameObject enemy in enemyGroup3){
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+        }
     }
 
 }
