@@ -12,6 +12,7 @@ public class EnemyFollow : MonoBehaviour
     public PlayerMovement playerMovement;
     public Enemy enemyScript;
     public Animator animator;
+    public SpriteRenderer sprite;
 
     public Transform enemySword;
 
@@ -91,13 +92,13 @@ public class EnemyFollow : MonoBehaviour
 
     public void MirrorTest(float swordAngle)
     {
-        animator.SetBool(Animator.GetCurrentAnimatorStateInfo(0).mirrorParameterActive,  mirror);
-        
-        // Debug.Log(animator.GetCurrentAnimatorStateInfo(0).mirror);
         if(swordAngle > 90 || swordAngle < -90)
         {
-            
-            // animator.mirrorParameter(true);
+            sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
         }
     }
 
