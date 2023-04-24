@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Rolling", rollTrue);
             rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
 
-            float rollSpeedMinimum = 15f;
+            float rollSpeedMinimum = 5f;
             if(rollSpeed < rollSpeedMinimum){
                 state = State.Normal;
                 rollTrue = false;
