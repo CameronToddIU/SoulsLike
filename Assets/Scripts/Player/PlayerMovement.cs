@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource dashAudio;
     public AudioSource damagedAudio;
     public GameEnding gameEnding;
+    public GameObject[] enemyGroup;
+    public EnemyFollow enemyFollow;
+    public EnemyFollow follow2;
 
 
 
@@ -122,15 +125,18 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other);
-        if (other.gameObject.CompareTag("Finish")) 
+        if (other.gameObject.CompareTag("Finish"))
         {
             gameEnding.PlayerEnteredEnd();
         }
         if (other.gameObject.CompareTag("Confine1"))
         {
+            //enemyGroup[0].EnemyFollow.Active();
+            enemyFollow.Active();
             other.GetComponent<CameraConfine>().Test(0);
         } else if (other.gameObject.CompareTag("Confine2"))
         {
+            follow2.Active();
             other.GetComponent<CameraConfine>().Test(1);
         }
     }

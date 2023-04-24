@@ -19,6 +19,7 @@ public class EnemyFollow : MonoBehaviour
     public float minimumDistance;
     public float attackRangeEnemy = 0.5f;
     public int enemyChaseRange = 30;
+    public bool enemyActive = false;
 
 
     private bool attacking = false;
@@ -28,12 +29,12 @@ public class EnemyFollow : MonoBehaviour
 
     private void Update()
     {
-        if(enemyScript.die != true)
+        if (enemyScript.die != true)
         {
-            if(attacking != true)
+            if (attacking != true)
             {
-                  //  Debug.Log("Distance from target: "+ Vector2.Distance(transform.position, target.position));
-                if (Vector2.Distance(transform.position, target.position) > minimumDistance&& Vector2.Distance(transform.position, target.position) < enemyChaseRange)
+                //  Debug.Log("Distance from target: "+ Vector2.Distance(transform.position, target.position));
+                if (Vector2.Distance(transform.position, target.position) > minimumDistance && Vector2.Distance(transform.position, target.position) < enemyChaseRange && enemyActive == true)
                 {
                     //activates battle music
                     AmbianceManager.SwapTrack(EnemyMusic, true);
@@ -41,31 +42,31 @@ public class EnemyFollow : MonoBehaviour
                     //makes the enemy sword face player
                     Vector3 dir = (target.position - transform.position).normalized;
                     var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-                    enemySword.eulerAngles = new Vector3(0,0,angle);
+                    enemySword.eulerAngles = new Vector3(0, 0, angle);
                     //makes enemy sword face player
 
 
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-                    
+
                 } else
                 {
                     attacking = true;
                     timeTracker2 = 2f;
                 }
 
-            }else
+            } else
             {
                 Damage();
 
                 timeTracker2 -= Time.deltaTime;
-                if(timeTracker2 < 0)
+                if (timeTracker2 < 0)
                 {
                     Vector3 dir = (target.position - transform.position).normalized;
                     var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-                    enemySword.eulerAngles = new Vector3(0,0,angle);
+                    enemySword.eulerAngles = new Vector3(0, 0, angle);
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
                 }
-                
+
                 // timeTracker -= Time.deltaTime;
                 // if(timeTracker < 0)
                 // {
@@ -81,32 +82,36 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
-
+    public void Active() 
+    {
+        enemyActive = true;    
+    }
 
 
     void Damage()
     {
-            attacking = true;
-            timeTracker -= Time.deltaTime;
-            if(timeTracker < 0)
+        attacking = true;
+        timeTracker -= Time.deltaTime;
+        if (timeTracker < 0)
+        {
+            if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
             {
-                if (bc.IsTouchingLayers(LayerMask.GetMask("Player")))
-                {
-                    Debug.Log("Hitting Player");
-                    playerMovement.LossHealth();
-                }
-                attacking = false;
-                timeTracker = 2f;
+                Debug.Log("Hitting Player");
+                playerMovement.LossHealth();
             }
+            attacking = false;
+            timeTracker = 2f;
+        }
     }
 
     //shows the attack sphere for player in unity
-    void OnDrawGizmosSelected() 
+    void OnDrawGizmosSelected()
     {
-        if(attackPointEnemy == null)
+        if (attackPointEnemy == null)
         {
             return;
         }
         Gizmos.DrawWireSphere(attackPointEnemy.position, attackRangeEnemy);
     }
+
 }
