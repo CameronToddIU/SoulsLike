@@ -23,10 +23,9 @@ public class EnemyFollow : MonoBehaviour
     public int enemyChaseRange = 30;
     public bool enemyActive = false;
 
-    bool mirror = false;
-
 
     private bool attacking = false;
+    private bool shouldMove = false;
 
     private float timeTracker = 1.4f;
     private float timeTracker2 = 1f;
@@ -76,12 +75,18 @@ public class EnemyFollow : MonoBehaviour
                 animator.SetBool("Chase", false);
 
                 timeTracker2 -= Time.deltaTime;
-                if(timeTracker2 < 0)
+                if(shouldMove == true)
                 {
+                    animator.SetBool("Attack", false);
+                    animator.SetBool("Chase", true);
+                    
+                    Debug.Log(timeTracker2);
                     Vector3 dir = (target.position - transform.position).normalized;
                     var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                     enemySword.eulerAngles = new Vector3(0,0,angle);
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    shouldMove = false;
+                    MirrorTest(angle);
                 }
 
             }
@@ -133,6 +138,7 @@ public class EnemyFollow : MonoBehaviour
                     attacking = false;
                     timeTracker = 1.45f;
                     timeTracker3 = 1.45f;
+                    shouldMove = true;
                 }
             }
         
