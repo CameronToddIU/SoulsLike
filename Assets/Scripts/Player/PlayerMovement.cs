@@ -131,14 +131,18 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Confine1"))
         {
-            //enemyGroup[0].EnemyFollow.Active();
-            enemyFollow.Active();
+            enemyGroup[0].GetComponent<EnemyFollow>().Active();
+            //enemyFollow.Active();
             other.GetComponent<CameraConfine>().Test(0);
         } else if (other.gameObject.CompareTag("Confine2"))
         {
             follow2.Active();
             other.GetComponent<CameraConfine>().Test(1);
         }
+        /*if(other.gameObject.CompareTag("Room"))
+        {
+            follow3.Active();
+        }*/
     }
 
 }
