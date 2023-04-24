@@ -22,6 +22,8 @@ public class EnemyFollow : MonoBehaviour
     public int enemyChaseRange = 30;
     public bool enemyActive = false;
 
+    bool mirror = false;
+
 
     private bool attacking = false;
 
@@ -50,6 +52,7 @@ public class EnemyFollow : MonoBehaviour
                     Vector3 dir = (target.position - transform.position).normalized;
                     var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                     enemySword.eulerAngles = new Vector3(0,0,angle);
+                    MirrorTest(angle);
                     //makes enemy sword face player
 
 
@@ -83,6 +86,18 @@ public class EnemyFollow : MonoBehaviour
             }
         } else {
             attacking = false;
+        }
+    }
+
+    public void MirrorTest(float swordAngle)
+    {
+        animator.SetBool(Animator.GetCurrentAnimatorStateInfo(0).mirrorParameterActive,  mirror);
+        
+        // Debug.Log(animator.GetCurrentAnimatorStateInfo(0).mirror);
+        if(swordAngle > 90 || swordAngle < -90)
+        {
+            
+            // animator.mirrorParameter(true);
         }
     }
 
