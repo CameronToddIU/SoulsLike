@@ -28,13 +28,13 @@ namespace Cainos.PixelArtTopDown_Basic
             doorOpen.Play();
         }
 
-        private void OnTriggerExit2D(Collider2D other)
-        {
+        //private void OnTriggerExit2D(Collider2D other)
+        /*{
             targetColor = new Color(1, 1, 1, 0);
             openDoor.SetActive(false);
             closedDoor.SetActive(true);
             doorClose.Play();
-        }
+        }*/
 
         private void Update()
         {
