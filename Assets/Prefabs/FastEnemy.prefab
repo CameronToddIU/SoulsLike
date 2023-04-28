@@ -14,6 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 7450050003600746989}
     - target: {fileID: 1045797854204894584, guid: 47ccf0d652560474fab56b5d8d0e30fb,
         type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045797854204894584, guid: 47ccf0d652560474fab56b5d8d0e30fb,
+        type: 3}
       propertyPath: sprite
       value: 
       objectReference: {fileID: 6047241254060320830}
