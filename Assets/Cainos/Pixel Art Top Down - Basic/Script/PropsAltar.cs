@@ -20,12 +20,18 @@ namespace Cainos.PixelArtTopDown_Basic
         private Color curColor;
         private Color targetColor;
 
+        private bool isDoorOpen = false;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
-            targetColor = new Color(1, 1, 1, 1);
-            openDoor.SetActive(true);
-            closedDoor.SetActive(false);
-            doorOpen.Play();
+            if(!isDoorOpen) {
+                targetColor = new Color(1, 1, 1, 1);
+                openDoor.SetActive(true);
+                closedDoor.SetActive(false);
+                doorOpen.Play();
+                isDoorOpen = true;
+            }
+            
         }
 
         //private void OnTriggerExit2D(Collider2D other)
