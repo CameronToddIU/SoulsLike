@@ -9,6 +9,10 @@ TagManager:
   - Box
   - Button
   - Room
+  - Confine5
+  - Confine6
+  - Confine7
+  - Confine8
   layers:
   - Default
   - TransparentFX
