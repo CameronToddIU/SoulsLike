@@ -157,8 +157,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1045797854204894584, guid: 47ccf0d652560474fab56b5d8d0e30fb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47ccf0d652560474fab56b5d8d0e30fb, type: 3}
 --- !u!61 &999427306825432781 stripped
 BoxCollider2D:
@@ -166,39 +165,6 @@ BoxCollider2D:
     type: 3}
   m_PrefabInstance: {fileID: 312035145791915293}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4130176028399404599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4397139932876489514, guid: 47ccf0d652560474fab56b5d8d0e30fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 312035145791915293}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4636989588522322361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4130176028399404599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0aa8a00d82d6f43b266eeed168e60a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyMusic: {fileID: 0}
-  enemyRB: {fileID: 0}
-  attackPointEnemy: {fileID: 0}
-  bc: {fileID: 0}
-  playerMovement: {fileID: 0}
-  enemyScript: {fileID: 0}
-  animator: {fileID: 0}
-  sprite: {fileID: 0}
-  enemySword: {fileID: 0}
-  speed: 0
-  target: {fileID: 0}
-  minimumDistance: 0
-  attackRangeEnemy: 0.5
-  enemyChaseRange: 30
-  enemyActive: 0
 --- !u!95 &4130176028909305629 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4397139933176117760, guid: 47ccf0d652560474fab56b5d8d0e30fb,
