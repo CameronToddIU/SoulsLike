@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
     public GameObject[] enemyGroup1;
     public GameObject[] enemyGroup2;
     public GameObject[] enemyGroup3;
+    public GameObject[] enemyGroup4;
+    public GameObject[] enemyGroup5;
+    public GameObject[] enemyGroup6;
+    public GameObject[] enemyGroup7;
     public EnemyFollow enemyFollow;
     public EnemyFollow follow2;
 
@@ -146,7 +150,39 @@ public class PlayerMovement : MonoBehaviour
             }
             other.GetComponent<CameraConfine>().Test(1);
         }
-        if(other.gameObject.CompareTag("Room"))
+        else if (other.gameObject.CompareTag("Confine5"))
+        {
+            foreach (GameObject enemy in enemyGroup4)
+            {
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+            other.GetComponent<CameraConfine>().Test(4);
+        }
+        else if (other.gameObject.CompareTag("Confine6"))
+        {
+            foreach (GameObject enemy in enemyGroup5)
+            {
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+            other.GetComponent<CameraConfine>().Test(5);
+        }
+        else if (other.gameObject.CompareTag("Confine7"))
+        {
+            foreach (GameObject enemy in enemyGroup6)
+            {
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+            other.GetComponent<CameraConfine>().Test(6);
+        }
+        else if (other.gameObject.CompareTag("Confine8"))
+        {
+            foreach (GameObject enemy in enemyGroup7)
+            {
+                enemy.GetComponent<EnemyFollow>().Active();
+            }
+            other.GetComponent<CameraConfine>().Test(7);
+        }
+        if (other.gameObject.CompareTag("Room"))
         {
             foreach (GameObject enemy in enemyGroup3){
                 enemy.GetComponent<EnemyFollow>().Active();
