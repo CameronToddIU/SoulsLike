@@ -16555,6 +16555,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 540110157112125205, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125207, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125207, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125208, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125208, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: ShapeModule.donutRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125208, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125208, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157112125208, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157390492418, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 540110157390492418, guid: 305285cf51a3307488d6b5d343c5d1ba,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
     - target: {fileID: 1523523264587734675, guid: 305285cf51a3307488d6b5d343c5d1ba,
         type: 3}
       propertyPath: m_SortingLayer
@@ -116062,12 +116112,12 @@ PrefabInstance:
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: -12.335018
+      value: -12.596724
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -12.41989
+      value: -12.550742
       objectReference: {fileID: 0}
     - target: {fileID: 1802801670656980602, guid: a5a6567414fde1d41a48b0ab4d5ca482,
         type: 3}

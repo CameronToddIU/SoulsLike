@@ -45,8 +45,8 @@ public class EnemyFollow : MonoBehaviour
                   //  Debug.Log("Distance from target: "+ Vector2.Distance(transform.position, target.position));
                	if (Vector2.Distance(transform.position, target.position) > minimumDistance && Vector2.Distance(transform.position, target.position) < enemyChaseRange && enemyActive == true)
                 {
-                    //activates battle music
-                    AmbianceManager.SwapTrack(EnemyMusic, true);
+                    /*//activates battle music
+                    AmbianceManager.SwapTrack(EnemyMusic, true);*/
 
                     //makes the enemy sword face player
                     Vector3 dir = (target.position - transform.position).normalized;
