@@ -21,10 +21,12 @@ namespace Cainos.PixelArtTopDown_Basic
         private Color targetColor;
 
         private bool isDoorOpen = false;
+        public Animator animator;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if(!isDoorOpen) {
+                animator.SetTrigger("ShowText");
                 targetColor = new Color(1, 1, 1, 1);
                 openDoor.SetActive(true);
                 closedDoor.SetActive(false);
