@@ -12022,7 +12022,7 @@ PrefabInstance:
     - target: {fileID: 3176843315038797617, guid: 7b707b6e1420a704894b76abca62f742,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3176843315038797617, guid: 7b707b6e1420a704894b76abca62f742,
         type: 3}
@@ -105385,7 +105385,7 @@ PrefabInstance:
     - target: {fileID: 7947911505737750448, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7947911505737750448, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
@@ -106099,6 +106099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FastEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
+        type: 3}
+      propertyPath: speed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
         type: 3}
@@ -107919,7 +107924,7 @@ PrefabInstance:
     - target: {fileID: 6075975974975622417, guid: b7a5fce6e52ebbf488a8e8516c6692cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6075975974975622417, guid: b7a5fce6e52ebbf488a8e8516c6692cb,
         type: 3}
@@ -127414,6 +127419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
         type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1975917348}
@@ -127846,6 +127856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FastEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
+        type: 3}
+      propertyPath: speed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
         type: 3}
