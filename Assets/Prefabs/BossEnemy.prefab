@@ -257,7 +257,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -44025399
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1045797854204894584, guid: 47ccf0d652560474fab56b5d8d0e30fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47ccf0d652560474fab56b5d8d0e30fb, type: 3}
 --- !u!114 &955061287797756154 stripped
 MonoBehaviour:
@@ -265,12 +266,45 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3478125086397977559}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 955061287797756157}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2c6272044cfbe8418c474875e242500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &955061287797756157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4397139932876489514, guid: 47ccf0d652560474fab56b5d8d0e30fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3478125086397977559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3040061710372404195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955061287797756157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0aa8a00d82d6f43b266eeed168e60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyMusic: {fileID: 0}
+  enemyRB: {fileID: 0}
+  attackPointEnemy: {fileID: 0}
+  bc: {fileID: 0}
+  playerMovement: {fileID: 0}
+  enemyScript: {fileID: 0}
+  animator: {fileID: 0}
+  sprite: {fileID: 0}
+  enemySword: {fileID: 0}
+  speed: 0
+  target: {fileID: 0}
+  minimumDistance: 0
+  attackRangeEnemy: 0.5
+  enemyChaseRange: 30
+  enemyActive: 0
 --- !u!212 &955061288160324052 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4397139933176117763, guid: 47ccf0d652560474fab56b5d8d0e30fb,
