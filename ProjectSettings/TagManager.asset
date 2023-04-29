@@ -13,6 +13,9 @@ TagManager:
   - Confine6
   - Confine7
   - Confine8
+  - Confine9
+  - Boss Enemy
+  - Fast Enemy
   layers:
   - Default
   - TransparentFX
