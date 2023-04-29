@@ -178,7 +178,15 @@ public class PlayerMovement : MonoBehaviour
         {
             foreach (GameObject enemy in enemyGroup7)
             {
-                enemy.GetComponent<EnemyFollow>().Active();
+                if(enemy.CompareTag("Fast Enemy")) 
+                {
+                    enemy.GetComponent<EnemyFollow>().Active();
+                }
+                if (enemy.CompareTag("Boss Enemy"))
+                {
+                    enemy.GetComponent<EnemyFollow1>().Active();
+                }
+
             }
             other.GetComponent<CameraConfine>().Test(1);
         }
