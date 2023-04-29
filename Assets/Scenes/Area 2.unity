@@ -127907,6 +127907,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: bc
+      value: 
+      objectReference: {fileID: 3751597554393099059}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 3751597554393099057}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1975917348}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: enemyRB
+      value: 
+      objectReference: {fileID: 3751597554393099061}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3751597554393099058}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: EnemyMusic
+      value: 
+      objectReference: {fileID: 371633918}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: enemySword
+      value: 
+      objectReference: {fileID: 3751597554393099056}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: enemyScript
+      value: 
+      objectReference: {fileID: 3751597554393099062}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 651653868}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: minimumDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: attackPointEnemy
+      value: 
+      objectReference: {fileID: 3751597554393099060}
+    - target: {fileID: 3040061710372404195, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+        type: 3}
+      propertyPath: attackRangeEnemy
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4523764451943370415, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
         type: 3}
       propertyPath: target
@@ -127930,6 +127995,54 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3751597554393099054}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3751597554393099056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2961083817845170569, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3751597554393099057 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 955061288160324052, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3751597554393099058 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 955061288160324055, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &3751597554393099059 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4165539171233605639, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3751597554393099060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6353788910341725465, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &3751597554393099061 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 955061287797756153, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3751597554393099062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 955061287797756154, guid: 5a4e720dee1c6634e87a2493ed1f68f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3751597554393099054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751597554393099055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c6272044cfbe8418c474875e242500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7691383825547632788
 PrefabInstance:
   m_ObjectHideFlags: 0
