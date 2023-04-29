@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 
     public Animator animator;
     public Animator animatorAttack;
+    public GameEnding gameEnding;
 
     public int maxHealth = 100;
     public bool die = false;
@@ -34,7 +35,10 @@ public class Enemy : MonoBehaviour
         animatorAttack.SetTrigger("AttackDead");
         animator.SetBool("Dead", true);
         Debug.Log("Enemy Died");
-
+        if (this.CompareTag("Boss Enemy"))
+        {
+            gameEnding.BossDied();
+        }
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }
