@@ -128152,6 +128152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6047241254762582295, guid: 10278de47f15ba149b31a0f71e72f2bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fast Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6947560001166659397, guid: 10278de47f15ba149b31a0f71e72f2bd,
         type: 3}
       propertyPath: speed
