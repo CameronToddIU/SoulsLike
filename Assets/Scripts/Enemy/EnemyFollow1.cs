@@ -127,6 +127,7 @@ public class EnemyFollow1 : MonoBehaviour
                     {
                         Debug.Log("Hitting Player");
                         playerMovement.LossHealth();
+                        playerMovement.LossHealth();
                         PlayerGotHit = true;
                         timeTrackerHitting = .5f;
                     }
