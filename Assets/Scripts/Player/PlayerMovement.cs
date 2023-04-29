@@ -156,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 enemy.GetComponent<EnemyFollow>().Active();
             }
-            other.GetComponent<CameraConfine>().Test(4);
+            other.GetComponent<CameraConfine>().Test(1);
         }
         else if (other.gameObject.CompareTag("Confine6"))
         {
@@ -164,7 +164,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 enemy.GetComponent<EnemyFollow>().Active();
             }
-            other.GetComponent<CameraConfine>().Test(5);
+            other.GetComponent<CameraConfine>().Test(1);
         }
         else if (other.gameObject.CompareTag("Confine7"))
         {
@@ -172,7 +172,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 enemy.GetComponent<EnemyFollow>().Active();
             }
-            other.GetComponent<CameraConfine>().Test(6);
+            other.GetComponent<CameraConfine>().Test(1);
         }
         else if (other.gameObject.CompareTag("Confine8"))
         {
@@ -180,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 enemy.GetComponent<EnemyFollow>().Active();
             }
-            other.GetComponent<CameraConfine>().Test(7);
+            other.GetComponent<CameraConfine>().Test(1);
         }
         if (other.gameObject.CompareTag("Room"))
         {
